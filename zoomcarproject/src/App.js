@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+import { Box } from '@chakra-ui/react';
 import './App.css';
-
+import Navbar from './Components/navbar';
+import Home from './Components/Home';
+import AllRoute from './Allroute';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box style={{backgroundImage:" linear-gradient(to bottom right, #FDFCFB, #E2D1C3)"}} pb="10px" className="App">
+      <Navbar/>
+      <AllRoute/>
+    </Box>
   );
 }
 

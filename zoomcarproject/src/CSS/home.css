@@ -1,0 +1,16 @@
+.slick-arrow.slick-prev,.slick-arrow.slick-next{
+    background-color: rgb(71, 75, 78);
+    width:47;
+    height:104px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.slick-prev::before,.slick-next::before{
+    display: none;
+}
+.slick-prev{
+    left: 0;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
