@@ -5,7 +5,7 @@ import {Button,Box,Input,Stack,Container,Image, Center} from '@chakra-ui/react'
 import axios from "axios"
 import { loading1,success,error1 } from "../Context/AuthContext/action";
 import { Navigate } from "react-router-dom";
-import Login1 from "./Logix";
+import Login1 from "./Login";
 
 const Login = () => {
   const{state,dispatch}=useContext(authcontext)

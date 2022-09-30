@@ -34,7 +34,7 @@ if(!error){
 }
   return (
     <Box textAlign="center" mt="70px">
-    <Box color="#32CD32"fontSize="25px"fontWeight="bold" mb="10px">WELCOME TO SIGNUP PAGE</Box>
+    <Box color="#32CD32"fontSize="25px"fontWeight="bold" mb="10px">WELCOME TO LOGIN PAGE</Box>
     <Box  w="33%" m="auto" mt="30px" h="auto" bg="white" p="10px 0px" borderRadius="20px">
     <Image src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg" h="65%" w="100%"/>
     <Stack spacing={3}   w="70%" m="auto" p="10px 0px" textAlign="center" >

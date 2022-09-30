@@ -11,6 +11,9 @@ function reducer(state,action){
 
         case "status":
         return {...state,authstatus:action.authstatus}
+       
+        case "data":
+        return {...state,data:action.data}
 
         default:
         return state

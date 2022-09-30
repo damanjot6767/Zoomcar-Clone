@@ -8,15 +8,15 @@ import {Box,Flex,Spacer,ButtonGroup,Button,Image,IconButton,Icon,Drawer,
     DrawerContent,
     DrawerCloseButton,useDisclosure,VStack,} from "@chakra-ui/react"
 import {HamburgerIcon} from "@chakra-ui/icons"
-
-
+import { authcontext } from "../Context/AuthContext/AuthContextProvider";
+import Profile from "./profile";
 function Navbar(){
-    
-    
+    const{state,dispatch}=useContext(authcontext)
+    const{authstatus,email}=state
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = useRef()
 
-    return (<>
+    return (<Box style={{position:"fixed",zIndex:"1",width:"100%",marginTop:"-5rem"}}>
     <Drawer
         isOpen={isOpen}
         placement='left'cd 
@@ -30,7 +30,8 @@ function Navbar(){
 
           <DrawerBody>
          <VStack spacing={5}>
-
+         
+         {authstatus?<Profile/>:
          <Box w="90%" borderRadius="20px" p ="5px 10px" color="black" bg="#C2C2C2" fontSize="13px" _hover={{bg:"black",color:"white",transition:"0.5s"}}>
           <Link to ="/signup/login">
          <Flex>
@@ -38,7 +39,7 @@ function Navbar(){
        <Box mt="1px" fontSize="15px">Login/Signup</Box>
        </Flex>
        </Link>
-       </Box>
+       </Box>}
 
         <Box w= "90%" borderRadius="20px" p ="5px 10px" color="black" bg="#C2C2C2" fontSize="13px" _hover={{bg:"black",color:"white",transition:"0.5s"}}>
         <Flex>
@@ -94,11 +95,12 @@ function Navbar(){
        <Spacer />
        <Box mt="5px" fontSize="15px">ZMS</Box>
        <Spacer />
-       <Link to="/signup/login"><Box mt="5px" fontSize="15px">Login/Signup</Box></Link>
+       {authstatus?<Profile/>
+       :<Link to="/signup/login"><Box mt="5px" fontSize="15px">Login/Signup</Box></Link>}
        <Spacer />
     </ButtonGroup>
   </Flex>
-  </>
+  </Box>
     )
 }
 export default Navbar

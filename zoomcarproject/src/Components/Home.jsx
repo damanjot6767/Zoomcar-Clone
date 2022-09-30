@@ -3,14 +3,23 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css";
 import { Box,Image,VStack,Divider,MenuItem,Menu,MenuButton,Button,MenuList} from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
-
+import Forms from "./forms";
+import {useContext } from "react";
+import { authcontext } from "../Context/AuthContext/AuthContextProvider";
+import database from  "../database.json"
+const{fligth}=database;
 const Home=()=>{
-    return (<Box style={{margin:"10px"}}>
-      <Box>
+    const{state,dispatch}=useContext(authcontext)
+    const{authstatus}=state
+
+    return (<Box style={{marginTop:"70px"}}>
+      <Box >
       <Slider  autoplay={true} autoplaySpeed={1900} dots initialSlide={2}>
-            <Box >
-               <Image src="https://sugermint.com/wp-content/uploads/2022/03/Zoomcar-Success-Story.jpg" style={{width:"100%",height:"70vh",borderRadius:"20px"}}/>
+            
+            <Box>
+                <Image src="https://sugermint.com/wp-content/uploads/2022/03/Zoomcar-Success-Story.jpg" alt="img1" style={{width:"100%",height:"70vh",borderRadius:"20px"}}/>
             </Box>
+            
             <Box>
                 <Image src= "https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/sites/3/2021/12/02103828/Artboard_%E2%80%93_39-1-scaled-1.jpg" alt="img2" style={{width:"100%",height:"70vh",borderRadius:"20px"}} />
             </Box>
@@ -22,7 +31,7 @@ const Home=()=>{
             </Box>
        </Slider>
       </Box>
-
+        {authstatus && <Forms/>}
       <Box style={{width:"98%",margin:"auto",marginTop:"40px",background:"rgb(247, 162, 0)",padding:"30px 30px",borderRadius:"20px",backgroundImage:"linear-gradient(to bottom right, #5761B2, #1FC5A8)"}}>
        <Slider autoplay={true} autoplaySpeed={1900} slidesToShow={4}>
            <Box >
