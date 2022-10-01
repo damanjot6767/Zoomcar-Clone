@@ -14,7 +14,7 @@ const Home=()=>{
 
     return (<Box style={{marginTop:"70px"}}>
       <Box >
-      <Slider  autoplay={true} autoplaySpeed={1900} dots initialSlide={2}>
+      <Slider  autoplay={true} autoplaySpeed={1900} dots initialSlide={0}>
             
             <Box>
                 <Image src="https://sugermint.com/wp-content/uploads/2022/03/Zoomcar-Success-Story.jpg" alt="img1" style={{width:"100%",height:"70vh",borderRadius:"20px"}}/>
