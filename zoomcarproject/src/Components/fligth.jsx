@@ -17,7 +17,7 @@ function Fligth(){
              :<SimpleGrid p="30px 0px"  columns={{base:1,md:2,lg:3}} gap={{base:5,md:7,lg:10}} >
 
              {data.map(({image,source,destination,price,departure,arrival,duration})=><Box pb="10px" border="3px solid" borderColor="black" borderRadius="20px" _hover={{borderColor:"green",transition:"0.6s",transform: "scale(1.1)",bg:"#F0FFFF"}}>
-                <Image height="50%" borderTopRadius="20px" src={image} alt={price}/>
+                <Image height="50%" width="100%" borderTopRadius="20px" src={image} alt={price}/>
                 <Box p="7px 10px"  borderBottomRadius="20px">
                 <Box fontWeight="bold" fontSize={23}>{`From ${source} to ${destination}`}</Box>
                 <Box fontWeight="bold" fontSize={16}>{`Timing ${departure} to ${arrival}`}</Box>
