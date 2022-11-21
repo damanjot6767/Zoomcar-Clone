@@ -3,7 +3,7 @@
 # <span style="color:red"> Welcome Here!</span>
 
 Hello Readers,<br>
-It was during the final week which is depicted as the construct week. I have done this project within 5 days and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-4 and we give a name to our project called Zoomcar Project.<br> I hope you will enjoy the reading….
+It was during the final week which is depicted as the construct week. I have done this project within 5 days and build the clone of a very popular E-Commerce Car Self Drive Booking Website in the India for “Self Drive For Self Driven”, “Zoom Car” for Learning Purpose<br> This Project is our construct week project in Unit-4 and I give a name to our project called Zoomcar-Clone.<br> I hope you will enjoy the reading….
 
 # <span style="color:red"> About Website: </span>
 
@@ -20,20 +20,16 @@ I have used  HTmL,CSS, Advance JavaScript, ReactJS, useReducer, Chakra UI etc. I
 
  <b>CSS:</b>
 
-We have used to add styling to the website. We used Advance CSS for Popup Modal window for login/Sign up and all other styling.
+I have used to add styling to the website. We used Advance CSS for Popup Modal window for login/Sign up and all other styling.
 
  <b> Advance JavaScript:</b>
 
-We have used to add logical functionalities to the web pages like the on Click function. We have added all the functionalities.
+I have used to add logical functionalities to the web pages like the on Click function. I have added all the functionalities.
 
 
 # <span style="color:red"> Project Owner: </span>
 ## Damanjot Singh.
 <br/>
-
-## <span style="color:red"> Experience of team: </span>
-
- ## Let us share our experience
 
 ## So journey started from here!
 
